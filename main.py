@@ -1,4 +1,7 @@
 from csv import reader
+with open('civic.csv', 'r', encoding='windows-1251') as csvfile:
+        table = reader(csvfile, delimiter=';')
+print(table)
 
 
 output = open('result.txt', 'w')
